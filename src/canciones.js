@@ -78,24 +78,6 @@ export let canciones = [
         "url": "files/videogame/songs/zelda_link-to-past.mp3"
     },
     {
-        "id": 12,
-        "category": "game",
-        "name": "Dong KinKong Main",
-        "url": "files/other/songs/dkng-main.mp3"
-    },
-    {
-        "id": 13,
-        "category": "game",
-        "name": "Dong KinKong Other",
-        "url": "files/other/songs/dkng-other.mp3"
-    },
-    {
-        "id": 14,
-        "category": "game",
-        "name": "mega-man",
-        "url": "files/other/songs/mega-man.mp3"
-    },
-    {
         "id": 15,
         "game": "cartoon",
         "name": "Flintstones",

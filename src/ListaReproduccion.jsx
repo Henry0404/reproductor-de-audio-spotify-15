@@ -1,19 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { canciones } from "./canciones.js";
 
 function ListaReproduccion() {
   const [reproduciendo, setReproduciendo] = useState(false);
+  const [cancionUrl, setCancionUrl] = useState("");
+  const audioRef = useRef();
 
   function reproducirCancion(cancion) {
     setReproduciendo(true);
+    setCancionUrl(cancion.url);
+    audioRef.current.play();
   }
 
   function pausarReproduccion() {
     setReproduciendo(false);
+    audioRef.current.pause();
   }
 
   return (
     <div className="container bg-dark">
+      <audio
+        ref={audioRef}
+        src={"https://assets.breatheco.de/apis/sound/" + cancionUrl}
+      />
       <div className="card text-center bg-dark">
         <div className="card-header bg-dark text-white bg-dark">
           Lista de Reproducción
