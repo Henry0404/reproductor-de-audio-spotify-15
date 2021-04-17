@@ -1,10 +1,7 @@
-import './App.css';
 import ListaReproduccion from "./ListaReproduccion";
 
 function App() {
-  return (
-    < ListaReproduccion />
-  )
+  return <ListaReproduccion />;
 }
 
 export default App;

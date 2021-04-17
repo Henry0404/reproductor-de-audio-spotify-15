@@ -49,9 +49,9 @@ function ListaReproduccion() {
   };
 
   return (
-    <div className="container bg-dark">
-      <div className="card text-center bg-dark">
-        <div className="card-header bg-dark text-white bg-dark">
+    <div className="container bg-danger">
+      <div className="card text-center bg-danger">
+        <div className="card-header bg-dark text-white bg-danger">
           Lista de Reproducción
           <audio
             className="audioControl"
@@ -60,7 +60,7 @@ function ListaReproduccion() {
           />
         </div>
 
-        <ul className="list-group list-group-flush bg-dark">
+        <ul className="list-group list-group-flush bg-danger">
           {canciones.map((cancion, index) => {
             return (
               <button
